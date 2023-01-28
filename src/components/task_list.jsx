@@ -2,7 +2,6 @@ import React , { useState} from "react";
 import { Task } from "../models/task.class";
 import { LEVELS } from "../models/levels.enum";
 import TaskComponent from "./task";
-import TaskForm from "./taskForm";
 import TaskFormFormik from "./taskFormFormik";
 
 
@@ -30,7 +29,6 @@ function TaskListComponent() {
   };
 
   const addnewTask = (task) => {
-    console.log(task)
     const tempTask = [...tasks];
     tempTask.push(task);
     setTasks(tempTask);
